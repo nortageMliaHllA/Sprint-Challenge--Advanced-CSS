@@ -1,1 +1,29 @@
 // Navigation code here
+h1 {
+    display: flex;
+     justify-content: center;
+     margin-top: 1.5rem;
+}
+
+header nav {
+	background: @nav-bg;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav a {
+	margin: 25px 25px 25px 0;
+	.padding();
+	text-decoration: none;
+    color: @ebony-clay;
+}
+
+@media @phone {
+    header {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 10px;
+    }
+  }
+

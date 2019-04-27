@@ -1,1 +1,33 @@
 // Mixins Here
+.border() {
+    padding: 15px;
+}
+
+
+.custom-btn(@width: 35%, @bgColor: #23293B, @fontColor: white, @bdRadius: 1.5rem) {
+    display: block;
+    background-color: @bgColor;
+    cursor: pointer;
+    padding: 1.5rem;
+    width: @width;
+    height: 50px;
+    font-size: 2rem;
+    border-radius: .5rem;
+    color: @fontColor;
+    text-align: center;
+
+    &:hover {
+        background-color: @sea-shell;
+        color: @river-bend;
+	  }
+}
+
+.walk .walk-text .btn {
+.custom-btn();
+}
+
+.custom-layout(center, center) {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}

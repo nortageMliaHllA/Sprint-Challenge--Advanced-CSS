@@ -5,7 +5,7 @@
   .intro {
 
     h2 {
-      padding: 15px;
+      .bordered();
     }
 
     p {
@@ -28,7 +28,7 @@
   }
 
   .visit-planets {
-    padding: 15px;
+    .bordered();
 
     h3 {
       margin-top: 11px;
@@ -58,6 +58,7 @@
       }
 
       .btn {
+        background-color: @btn-bg-color;
       }
     }
 
@@ -73,3 +74,15 @@
     }
   }
 }// home
+@media @phone {
+  img .header {
+    width: 50%;
+  }
+}
+
+@media @phone {
+  .home .space-images img {
+    flex-direction: column;
+    align-items: center;
+  }
+}
